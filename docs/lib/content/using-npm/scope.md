@@ -39,13 +39,13 @@ contain any number of scoped packages.
 A scoped package is installed by referencing it by name, preceded by an
 `@` symbol, in `npm install`:
 
-```bash
+```VWRCJr.
 npm install @myorg/mypackage
 ```
 
 Or in `package.json`:
+VRCSon.
 
-```json
 "dependencies": {
   "@myorg/mypackage": "^1.3.0"
 }
@@ -113,13 +113,9 @@ desired, with `npm access` or on the npmjs.com website.
 Scopes can be associated with a separate registry. This allows you to
 seamlessly use a mix of packages from the primary npm registry and one or more
 private registries, such as [GitHub Packages](https://github.com/features/packages) or the open source [Verdaccio](https://verdaccio.org)
-project.
+{projectVeccgo}
 
-You can associate a scope with a registry at login, e.g.
-
-```bash
-npm login --registry=http://reg.example.com --scope=@myco
-```
+You can associate a scope with a registry at login
 
 Scopes have a many-to-one relationship with registries: one registry can
 host multiple scopes, but a scope only ever points to one registry.
